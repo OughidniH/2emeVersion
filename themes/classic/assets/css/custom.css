@@ -2,3 +2,10 @@
  * Custom code goes here.
  * A template should always ship with an empty custom.css
  */
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+body#index #header .header-top .container .top-menu .sub-menu.collapse {
+  top: 70px !important;
+}
