@@ -44,6 +44,12 @@
           <div class="collapse" id="cart-summary-product-list">
             <ul class="media-list">
               {foreach from=$cart.products item=product}
+                
+                 {****** Calls the custom hook to display subcategories related to the current product******}
+
+                  {hook h='displayProductSubCategory' product=$product}
+
+
                 <li class="media">{include file='checkout/_partials/cart-summary-product-line.tpl' product=$product}</li>
               {/foreach}
             </ul>
